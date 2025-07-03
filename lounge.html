@@ -1,0 +1,64 @@
+<!-- FILE: lounge.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMSW — Lounge</title>
+
+  <!-- Styles & Scripts -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script defer src="bee.js"></script>
+  <script defer src="user.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const user = getUser();
+      if (!user) {
+        window.location.href = "signup.html";
+        return;
+      }
+
+      document.getElementById("userWelcome").innerText = `Welcome, ${user.code}`;
+      document.getElementById("roleTag").innerText = `Role: ${user.role.toUpperCase()}`;
+    });
+  </script>
+</head>
+<body class="page-body">
+
+  <section class="page-section">
+    <h2 id="userWelcome">👑 Welcome to the Lounge</h2>
+    <p id="roleTag" class="bee-say"></p>
+    <p>This is your exclusive vault. We drop nothing here that’s ordinary.</p>
+
+    <div class="card">
+      <h3>🎬 Teaser: BeeVerse 2025</h3>
+      <p>Private drop for our BMSW family. Watch this teaser before the world does:</p>
+      <a class="btn" href="https://youtube.com/your-link" target="_blank">Watch Now</a>
+    </div>
+
+    <div class="card">
+      <h3>🛠️ Premium Template Access</h3>
+      <p>Royal design starter pack for creators. One-click download:</p>
+      <a class="btn" href="https://drive.google.com/your-template" target="_blank">Download</a>
+    </div>
+
+    <div class="card">
+      <h3>📣 Join Our BMSW Lounge Hub</h3>
+      <p>Direct WhatsApp community access:</p>
+      <a class="btn" href="https://chat.whatsapp.com/your-link" target="_blank">Join Now</a>
+    </div>
+  </section>
+
+  <!-- Bee & Menu -->
+  <div class="bee-btn" onclick="toggleBeeMenu()">🐝</div>
+  <div class="bee-menu" id="beeMenu">
+    <button class="bee-app" onclick="goTo('index.html')">🏠 Home</button>
+    <button class="bee-app" onclick="goTo('dashboard.html')">📊 Dashboard</button>
+    <button class="bee-app" onclick="goTo('shop.html')">🛍️ Shop</button>
+    <button class="bee-app" onclick="goTo('signup.html')">🔄 Switch Role</button>
+  </div>
+
+</body>
+</html>

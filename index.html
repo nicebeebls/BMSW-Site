@@ -1,0 +1,141 @@
+<!-- FILE: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMSW — Welcome</title>
+
+  <!-- Styles & Scripts -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <script defer src="bee.js"></script>
+  <script defer src="user.js"></script>
+</head>
+<body class="bms-home">
+
+  <!-- HEADER -->
+  <header class="bms-header">
+  <div class="logo">
+    <img src="./assets/images/logo-main.png" alt="BMSW Logo" class="logo-img" />
+    <span>BMSW</span>
+  </div>
+  <div class="slogan">One Hive. Many Wings.</div>
+</header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1><span class="subtle-glow">Welcome to</span> BMSW</h1>
+      <p class="hero-tagline">Where Golden Ink Writes Digital Destiny</p>
+      <button class="btn start-btn" onclick="startApp()">Enter the Hive</button>
+    </div>
+  </section>
+
+  <!-- CREED SECTION -->
+  <section class="creed">
+    <h2 class="creed-title">Our Creed 🐝</h2>
+    <p class="creed-line">We build kings.</p>
+    <p class="creed-line">We train queens.</p>
+    <p class="creed-line">We give wings.</p>
+    <p class="creed-tag">— One Hive, Many Wings. This is BMSW.</p>
+  </section>
+
+  <!-- BEE BUTTON & MENU -->
+  <div class="bee-btn" onclick="toggleBeeMenu()">🐝</div>
+  <div class="bee-menu" id="beeMenu">
+    <button class="bee-app" onclick="goTo('dashboard.html')">📊 Dashboard</button>
+    <button class="bee-app" onclick="goTo('shop.html')">
+  <img src="./assets/images/logo-shop.jpg" alt="Shop Icon" class="icon-img" />
+  Shop
+</button>
+    <button class="bee-app" onclick="goTo('lounge.html')">👑 Lounge</button>
+    <button class="bee-app" onclick="goTo('signup.html')">📝 Join</button>
+  </div>
+
+  <!-- NEW SECTIONS BELOW -->
+
+  <!-- AUTHOR SECTION -->
+  <section class="author-section">
+    <img src="./assets/images/author-photo.jpg" alt="Author Photo" />
+    <h2>Isu Nice Abraham</h2>
+    <p>Navy Cadet, Marine Cadet, Founder of BMSW</p>
+    <p>From Nigeria 🇳🇬</p>
+  </section>
+
+  <!-- LEADER PROFILE -->
+  <section class="leader-profile">
+    <div class="leader-photo-placeholder">
+      <img src="./assets/images/leader-photo.jpg" alt="Leader Photo" />
+    </div>
+    <div class="leader-info">
+      <h2>Leader of BMSW</h2>
+      <p>A visionary Navy Cadet with a mission to build digital empires and empower creators globally. Passionate about innovation, leadership, and community growth.</p>
+    </div>
+  </section>
+
+  <!-- TOP USERS -->
+  <section class="top-users">
+    <h2 class="section-title">Top Users</h2>
+    <div class="users-grid">
+      <div class="user-card">
+        <img src="./assets/images/users/user1.jpg" alt="User 1" />
+        <p>User One</p>
+      </div>
+      <div class="user-card">
+        <img src="./assets/images/users/user2.jpg" alt="User 2" />
+        <p>User Two</p>
+      </div>
+      <div class="user-card">
+        <img src="./assets/images/users/user3.jpg" alt="User 3" />
+        <p>User Three</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERS -->
+  <section class="offers">
+    <h2 class="section-title">Our Offers</h2>
+    <div class="offers-grid">
+      <div class="offer-card">
+        <img src="./assets/images/offers/design.png" alt="Design Offer" />
+        <h3>Design Services</h3>
+        <p>Premium design templates and branding packages to elevate your digital presence.</p>
+      </div>
+      <div class="offer-card">
+        <img src="./assets/images/offers/training.png" alt="Training Offer" />
+        <h3>Training Programs</h3>
+        <p>Hands-on training for digital marketing, content creation, and growth hacking.</p>
+      </div>
+      <div class="offer-card">
+        <img src="./assets/images/offers/marketing.png" alt="Marketing Offer" />
+        <h3>Marketing Support</h3>
+        <p>Comprehensive marketing strategies tailored to your brand’s unique needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATORS -->
+  <section class="creators">
+    <h2 class="section-title">Meet Our Creators</h2>
+    <div class="creators-grid">
+      <div class="creator-card">
+        <img src="./assets/images/creators/creator1.jpg" alt="Creator 1" />
+        <h4>Creator One</h4>
+        <p>Graphic Designer</p>
+      </div>
+      <div class="creator-card">
+        <img src="./assets/images/creators/creator2.jpg" alt="Creator 2" />
+        <h4>Creator Two</h4>
+        <p>Video Editor</p>
+      </div>
+      <div class="creator-card">
+        <img src="./assets/images/creators/creator3.jpg" alt="Creator 3" />
+        <h4>Creator Three</h4>
+        <p>Content Writer</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

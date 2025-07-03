@@ -1,0 +1,420 @@
+/* === GLOBAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000; /* Black base */
+  color: #f5f5f5;
+}
+
+/* === HEADER === */
+.bms-header {
+  background: #000;
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid gold;
+}
+.logo {
+  color: gold;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.logo span {
+  letter-spacing: 2px;
+}
+
+/* === HERO === */
+.hero {
+  background: linear-gradient(145deg, #000 50%, #001f3f 50%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: gold;
+}
+.subtle-glow {
+  color: #ffffffaa;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.hero-tagline {
+  color: #ccc;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.start-btn {
+  margin-top: 30px;
+  padding: 14px 28px;
+  border: none;
+  background: gold;
+  color: #000;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.start-btn:hover {
+  background: #fff3b0;
+}
+
+/* === BEE BUTTON === */
+.bee-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: gold;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px gold;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* === BEE MENU === */
+.bee-menu {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid gold;
+  padding: 15px;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9998;
+}
+.bee-menu.show {
+  display: flex;
+}
+.bee-app {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.bee-app:hover {
+  background: #fff3b0;
+}
+/* === SIGNUP PAGE === */
+.signup-body {
+  background: #000;
+  color: gold;
+  text-align: center;
+  padding: 80px 20px;
+}
+.signup-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.signup-section p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+.signup-options .btn {
+  margin: 15px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+.creator-btn {
+  background: navy;
+  color: gold;
+}
+
+/* === DASHBOARD PAGE === */
+.dashboard-body {
+  background: #000;
+  color: gold;
+  text-align: center;
+  padding: 80px 20px;
+}
+.dashboard h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.dashboard p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.actions {
+  margin-top: 30px;
+}
+.actions .btn {
+  margin: 10px;
+}
+.bee-say {
+  margin-top: 40px;
+  font-style: italic;
+  color: #ffd700;
+}
+
+/* === SHOP + LOUNGE PAGE === */
+.page-body {
+  background: #0a0a0a;
+  color: #ddd;
+  padding: 60px 20px;
+  text-align: center;
+}
+.page-section {
+  max-width: 900px;
+  margin: auto;
+}
+.page-section h2 {
+  color: gold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  color: #fff;
+  text-align: left;
+}
+.card .btn {
+  margin-top: 10px;
+}
+/* === CREED SECTION === */
+.creed {
+  background: #000;
+  color: gold;
+  text-align: center;
+  padding: 40px 20px;
+}
+.creed-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.creed-line {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+.creed-tag {
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #fff;
+  font-style: italic;
+}
+
+/* === SLOGAN IN HEADER === */
+.slogan {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+/* === NEW SECTIONS ADDED BELOW === */
+
+/* === AUTHOR SECTION === */
+.author-section {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #111;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  color: gold;
+  box-shadow: 0 0 20px rgba(248, 194, 0, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.author-section img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 15px #f8c200;
+  margin-bottom: 20px;
+}
+.author-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.author-section p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* === LEADER PROFILE SECTION === */
+.leader-profile {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background: #101010;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #f8c200;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.leader-photo-placeholder img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(248, 194, 0, 0.85);
+}
+.leader-info h2 {
+  margin: 0 0 10px;
+  font-size: 2.2rem;
+}
+.leader-info p {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .leader-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* === TOP USERS SECTION === */
+.top-users {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  color: #f8c200;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-title {
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #d1a900;
+}
+.users-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.user-card {
+  background: #222;
+  border-radius: 15px;
+  width: 140px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(248, 194, 0, 0.7);
+  transition: transform 0.3s ease;
+}
+.user-card:hover {
+  transform: scale(1.05);
+}
+.user-card img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px #f8c200;
+}
+.user-card p {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* === OFFERS SECTION === */
+.offers {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  color: #f8c200;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.offers-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.offer-card {
+  background: #222;
+  border-radius: 20px;
+  width: 280px;
+  padding: 25px 20px;
+  box-shadow: 0 0 20px rgba(248,  194, 0, 0.8);
+  transition: transform 0.3s ease;
+}
+.offer-card:hover {
+  transform: translateY(-8px);
+}
+.offer-card img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #d1a900;
+}
+.offer-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+}
+.offer-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* === CREATORS SECTION === */
+.creators {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  color: #f8c200;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.creators-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.creator-card {
+  background: #222;
+  border-radius: 15px;
+  width: 180px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(248, 194, 0, 0.7);
+  transition: transform 0.3s ease;
+}
+.creator-card:hover {
+  transform: scale(1.05);
+}
+.creator-card img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px #f8c200;
+}
+.creator-card h4 {
+  margin: 10px 0 6px;
+}
+.creator-card p {
+  margin: 0;
+  font-weight: 600;
+}
+.icon-img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}

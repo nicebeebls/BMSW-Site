@@ -1,0 +1,47 @@
+<!-- FILE: dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMSW — Dashboard</title>
+
+  <!-- Styles & Scripts -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script defer src="user.js"></script>
+  <script defer src="bee.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      showUserData();
+    });
+  </script>
+</head>
+<body class="dashboard-body">
+
+  <section class="dashboard">
+    <h1>📊 Welcome to Your Hive, <span id="userName"></span></h1>
+    <p><strong>Code Name:</strong> <span id="userCode"></span></p>
+    <p><strong>Role:</strong> <span id="userRole"></span></p>
+    <p><strong id="pointsDisplay"></strong></p>
+
+    <div class="actions">
+      <button class="btn" onclick="updatePoints(10)">💬 Commented (+10 pts)</button>
+      <button class="btn" onclick="updatePoints(15)">📢 Shared a Link (+15 pts)</button>
+      <button class="btn" onclick="updatePoints(5)">🛍️ Visited Shop (+5 pts)</button>
+    </div>
+
+    <p class="bee-say">🐝 Bee says: Keep buzzing to rise in the hive!</p>
+  </section>
+
+  <div class="bee-btn" onclick="toggleBeeMenu()">🐝</div>
+  <div class="bee-menu" id="beeMenu">
+    <button class="bee-app" onclick="goTo('index.html')">🏠 Home</button>
+    <button class="bee-app" onclick="goTo('shop.html')">🛍️ Shop</button>
+    <button class="bee-app" onclick="goTo('lounge.html')">👑 Lounge</button>
+    <button class="bee-app" onclick="goTo('signup.html')">🔄 Switch Role</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- FILE: signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join the Hive — BMSW</title>
+
+  <!-- Styles & Scripts -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script defer src="user.js"></script>
+  <script defer src="bee.js"></script>
+</head>
+<body class="signup-body">
+
+  <section class="signup-section">
+    <h1>🐝 Join the BMSW Hive</h1>
+    <p>Choose your path and let's get started:</p>
+
+    <div class="signup-options">
+      <button onclick="setUser('customer')" class="btn">🛍️ I’m a Customer</button>
+      <button onclick="setUser('creator')" class="btn creator-btn">💼 I’m a Creator / Partner</button>
+    </div>
+  </section>
+
+  <!-- Bee Button (Optional) -->
+  <div class="bee-btn" onclick="toggleBeeMenu()">🐝</div>
+  <div class="bee-menu" id="beeMenu">
+    <button class="bee-app" onclick="goTo('index.html')">🏠 Home</button>
+    <button class="bee-app" onclick="goTo('dashboard.html')">📊 Dashboard</button>
+    <button class="bee-app" onclick="goTo('shop.html')">🛍️ Shop</button>
+    <button class="bee-app" onclick="goTo('lounge.html')">👑 Lounge</button>
+  </div>
+
+</body>
+</html>

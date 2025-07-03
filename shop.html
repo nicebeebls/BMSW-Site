@@ -1,0 +1,48 @@
+<!-- FILE: shop.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMSW — Shop</title>
+
+  <!-- Styles & Scripts -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script defer src="bee.js"></script>
+</head>
+<body class="page-body">
+
+  <section class="page-section">
+    <h2>🛍️ BMSW Featured Products</h2>
+
+    <div class="card">
+      <h3>🔥 Smart Watch (Affiliate)</h3>
+      <p>A futuristic gold-edged wrist watch. Tap into time in style.</p>
+      <a class="btn" href="https://your-affiliate-link.com" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <h3>🎧 Noise Cancelling Headset</h3>
+      <p>Deep bass. Clean calls. Be in the zone — the Hive zone.</p>
+      <a class="btn" href="https://your-affiliate-link.com" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <h3>💼 BMSW Backpack</h3>
+      <p>Carry your ideas in golden comfort. Limited stock.</p>
+      <a class="btn" href="https://your-affiliate-link.com" target="_blank">Buy Now</a>
+    </div>
+  </section>
+
+  <!-- Bee & Menu -->
+  <div class="bee-btn" onclick="toggleBeeMenu()">🐝</div>
+  <div class="bee-menu" id="beeMenu">
+    <button class="bee-app" onclick="goTo('index.html')">🏠 Home</button>
+    <button class="bee-app" onclick="goTo('dashboard.html')">📊 Dashboard</button>
+    <button class="bee-app" onclick="goTo('lounge.html')">👑 Lounge</button>
+    <button class="bee-app" onclick="goTo('signup.html')">🔄 Switch Role</button>
+  </div>
+
+</body>
+</html>
